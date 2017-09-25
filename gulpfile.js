@@ -1,0 +1,3 @@
+require ("./gulp/tasks/watch.js");
+require ("./gulp/tasks/scripts.js");
+require ("./gulp/tasks/styles.js");
