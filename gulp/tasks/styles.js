@@ -1,5 +1,7 @@
 const gulp = require('gulp'),
 postcss = require('gulp-postcss'),
+//Allowes .css files to be imported.
+cssImport = require('postcss-import'),
 //Autoprefix all the css properties for the diferent bowsers.
 autoprefixer = require('autoprefixer');
 
