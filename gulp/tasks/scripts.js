@@ -2,7 +2,7 @@ const gulp = require('gulp'),
 webpack = require('webpack');
 
 gulp.task('scripts', function (callback) {
-  //We just point the path to webpack.config.js file.
+  //We just require webpack.config.js file.
   //Err argument will console log the error if there is any, and stats argument will console log needy statistics about bundling proces.
   webpack(require('../../webpack.config'), function (err, stats) {
     if (err) {

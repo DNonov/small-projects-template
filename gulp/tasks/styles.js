@@ -9,7 +9,7 @@ autoprefixer = require('autoprefixer');
 // Add postcss filters.
 gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/styles.css')
-    .pipe(postcss([autoprefixer]))
+    .pipe(postcss([autoprefixer, cssImport]))
     .on('error', function(errorInfo) {
       console.log(errorInfo.toString());
       this.emit('end');
